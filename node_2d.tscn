@@ -1,6 +1,10 @@
-[gd_scene load_steps=4 format=4 uid="uid://gafb8388twyi"]
+[gd_scene load_steps=8 format=4 uid="uid://gafb8388twyi"]
 
+[ext_resource type="Texture2D" uid="uid://bxdwihxngn7ti" path="res://assets/backgrounds/nature_3/1.png" id="1_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://cg4vbfjcbih5t" path="res://assets/sprites/mineliketileset.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://dpj1phcrtlqo1" path="res://assets/backgrounds/nature_3/2.png" id="2_kdubu"]
+[ext_resource type="Texture2D" uid="uid://dqoqsukjtsagv" path="res://assets/backgrounds/nature_3/3.png" id="3_d21ai"]
+[ext_resource type="Texture2D" uid="uid://cqohnjnerbv3g" path="res://assets/backgrounds/nature_3/4.png" id="4_rj586"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("1_wtcfe")
@@ -21,34 +25,62 @@ texture = ExtResource("1_wtcfe")
 12:2/0 = 0
 14:2/0 = 0
 16:2/0 = 0
+16:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:4/0 = 0
 4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:4/0 = 0
+16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:6/0 = 0
+10:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:6/0 = 0
+12:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:6/0 = 0
+16:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:8/0 = 0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:8/0 = 0
+4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:8/0 = 0
+10:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:8/0 = 0
+12:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:8/0 = 0
+14:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:8/0 = 0
+16:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:10/0 = 0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:10/0 = 0
 4:10/0 = 0
 6:10/0 = 0
@@ -86,8 +118,42 @@ sources/0 = SubResource("TileSetAtlasSource_0e48y")
 
 [node name="Game" type="Node2D"]
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1440, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(84, -146)
+texture = ExtResource("1_q6r6c")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 1)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1440, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(84, -106)
+texture = ExtResource("2_kdubu")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1440, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(84, -160)
+texture = ExtResource("3_d21ai")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1440, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(84, -146)
+texture = ExtResource("4_rj586")
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
 tile_map_data = PackedByteArray("AAAAAAAAAAAIAAQAAAABAAAAAAAIAAQAAAACAAAAAAAIAAQAAAADAAAAAAAIAAQAAAAEAAAAAAAIAAQAAAAFAAAAAAAIAAQAAAAGAAAAAAAIAAQAAAAHAAAAAAAIAAQAAAAIAAAAAAAIAAQAAAAJAAAAAAAIAAQAAAAKAAAAAAAIAAQAAAALAAAAAAAIAAQAAAAMAAAAAAAIAAQAAAANAAAAAAAIAAQAAAAOAAAAAAAIAAQAAAAPAAAAAAAIAAQAAAD//wAAAAAIAAQAAAD+/wAAAAAIAAQAAAD9/wAAAAAIAAQAAAD8/wAAAAAIAAQAAAD7/wAAAAAIAAQAAAD6/wAAAAAIAAQAAAD5/wAAAAAIAAQAAAAPAAEAAAAGAAQAAAAOAAEAAAAGAAQAAAANAAEAAAAGAAQAAAAMAAEAAAACAAAAAAALAAEAAAACAAAAAAAKAAEAAAAGAAQAAAAJAAEAAAAGAAQAAAAIAAEAAAAGAAQAAAAHAAEAAAAGAAQAAAAGAAEAAAAGAAQAAAAFAAEAAAAGAAQAAAAEAAEAAAAGAAQAAAADAAEAAAAGAAQAAAACAAEAAAAGAAQAAAABAAEAAAAGAAQAAAAAAAEAAAAGAAQAAAD//wEAAAAGAAQAAAD+/wEAAAAGAAQAAAD9/wEAAAAGAAQAAAD8/wEAAAAGAAQAAAD7/wEAAAAGAAQAAAD6/wEAAAAGAAQAAAD5/wEAAAAGAAQAAAD5/wIAAAAQAAIAAAD6/wIAAAAQAAIAAAD7/wIAAAAQAAIAAAD8/wIAAAAQAAIAAAD9/wIAAAAQAAIAAAD+/wIAAAAQAAIAAAD//wIAAAAQAAIAAAAAAAIAAAAQAAIAAAABAAIAAAAQAAIAAAACAAIAAAAQAAIAAAADAAIAAAAQAAIAAAAEAAIAAAAAAAQAAAAFAAIAAAAAAAQAAAAGAAIAAAAAAAQAAAAHAAIAAAAAAAQAAAAIAAIAAAAAAAQAAAAJAAIAAAAAAAQAAAAKAAIAAAACAAAAAAAOAAIAAAAEAAAAAAAPAAIAAAAAAAQAAAANAAIAAAAOAAAAAAAMAAIAAAACAAAAAAALAAIAAAACAAAAAAAPAAMAAAAQAAIAAAAOAAMAAAACAAAAAAANAAMAAAAIAAAAAAAMAAMAAAAMAAAAAAALAAMAAAACAAAAAAAKAAMAAAAGAAAAAAAJAAMAAAAAAAQAAAAIAAMAAAAAAAQAAAAHAAMAAAAAAAQAAAAGAAMAAAAAAAQAAAAFAAMAAAAAAAQAAAAEAAMAAAAAAAQAAAADAAMAAAAAAAQAAAACAAMAAAAAAAQAAAABAAMAAAAAAAQAAAAAAAQAAAAEAAQAAAD//wQAAAAEAAQAAAD+/wQAAAAEAAQAAAD9/wQAAAAAAAQAAAD8/wQAAAAAAAQAAAD8/wMAAAAQAAIAAAD7/wMAAAAQAAIAAAD6/wMAAAAQAAIAAAD5/wMAAAAQAAIAAAD4/wMAAAAQAAIAAAD5/wQAAAAQAAIAAAD6/wQAAAAAAAQAAAD7/wQAAAAAAAQAAAD//wMAAAAAAAQAAAAAAAMAAAAAAAQAAAD+/wMAAAAQAAIAAAD9/wMAAAAQAAIAAAD4/wIAAAAQAAIAAAD4/wEAAAAGAAQAAAD3/wEAAAAGAAQAAAD3/wIAAAAQAAIAAAD3/wMAAAAQAAIAAAD3/wQAAAAQAAIAAAD4/wQAAAAQAAIAAAABAAQAAAAEAAQAAAACAAQAAAAAAAQAAAADAAQAAAAAAAQAAAAEAAQAAAAAAAQAAAAFAAQAAAAQAAIAAAAGAAQAAAAQAAIAAAAHAAQAAAAQAAIAAAAIAAQAAAAQAAIAAAAJAAQAAAAQAAIAAAAKAAQAAAACAAAAAAALAAQAAAAQAAAAAAAMAAQAAAACAAAAAAANAAQAAAACAAAAAAAOAAQAAAACAAAAAAAPAAQAAAAQAAIAAAAQAAQAAAAQAAIAAAAQAAMAAAAQAAIAAAAQAAIAAAAQAAIAAAAQAAEAAAAGAAQAAAARAAEAAAAGAAQAAAARAAIAAAAQAAIAAAARAAMAAAAQAAIAAAARAAQAAAAQAAIAAAARAAAAAAAGAAQAAAAQAAAAAAAGAAQAAAASAAAAAAAGAAQAAAASAAEAAAAGAAQAAAASAAIAAAAQAAIAAAASAAMAAAAQAAIAAAASAAQAAAAQAAIAAAATAAAAAAAGAAQAAAATAAEAAAAGAAQAAAATAAIAAAAQAAIAAAATAAQAAAAQAAIAAAATAAUAAAAQAAIAAAATAAMAAAAQAAIAAAAUAAAAAAAGAAQAAAAUAAEAAAAGAAQAAAAUAAIAAAAQAAIAAAAUAAMAAAAQAAIAAAAUAAQAAAAQAAIAAAAUAAUAAAAQAAIAAAASAAUAAAAQAAIAAAARAAUAAAAQAAIAAAAQAAUAAAAQAAIAAAAPAAUAAAAQAAIAAAAOAAUAAAAQAAIAAAAOAAYAAAAQAAIAAAANAAYAAAAQAAIAAAAMAAYAAAAQAAIAAAALAAYAAAAQAAIAAAAKAAYAAAAQAAIAAAAJAAYAAAAQAAIAAAAIAAYAAAAQAAIAAAAHAAYAAAAQAAIAAAAGAAYAAAAQAAIAAAAFAAYAAAAQAAIAAAAEAAYAAAAQAAIAAAADAAYAAAAQAAIAAAACAAYAAAAQAAIAAAABAAYAAAAEAAQAAAAAAAYAAAAEAAQAAAD//wYAAAAEAAQAAAD+/wYAAAAEAAQAAAD9/wYAAAAQAAIAAAD8/wYAAAAQAAIAAAD7/wYAAAAQAAIAAAD6/wYAAAAQAAIAAAD5/wYAAAAQAAIAAAD5/wUAAAAQAAIAAAD4/wUAAAAQAAIAAAD3/wUAAAAQAAIAAAD6/wUAAAAQAAIAAAD7/wUAAAAQAAIAAAD8/wUAAAAQAAIAAAD9/wUAAAAQAAIAAAD+/wUAAAAEAAQAAAD//wUAAAAEAAQAAAAAAAUAAAAEAAQAAAABAAUAAAAEAAQAAAANAAUAAAACAAAAAAAMAAUAAAACAAAAAAALAAUAAAACAAAAAAAKAAUAAAAAAAQAAAAJAAUAAAAAAAQAAAAIAAUAAAAAAAQAAAAHAAUAAAAAAAQAAAAGAAUAAAAAAAQAAAAFAAUAAAAAAAQAAAAEAAUAAAAQAAIAAAADAAUAAAAQAAIAAAACAAUAAAAEAAQAAAD2/wEAAAAGAAQAAAD2/wIAAAAQAAIAAAD2/wMAAAAQAAIAAAD2/wQAAAAQAAIAAAD2/wUAAAAQAAIAAAD2/wYAAAAQAAIAAAD3/wYAAAAQAAIAAAD4/wYAAAAQAAIAAAAUAAYAAAAQAAIAAAATAAYAAAAQAAIAAAASAAYAAAAQAAIAAAARAAYAAAAQAAIAAAAQAAYAAAAQAAIAAAAQAAcAAAAQAAIAAAAPAAcAAAAQAAIAAAAPAAYAAAAQAAIAAAAQAP//AAAKAAQAAAARAP//AAAKAAQAAAASAP//AAAKAAQAAAATAP//AAAKAAQAAAAUAP//AAAKAAQAAAD4////AAAKAAQAAAD3////AAAKAAQAAAD2////AAAKAAQAAAD1////AAAKAAQAAAD4/wAAAAAGAAQAAAD3/wAAAAAGAAQAAAD2/wAAAAAGAAQAAAD1/wAAAAAGAAQAAAAPAP//AAAEABAAAAAGAP//AAAEABAAAAAHAP//AAACABAAAAD4//7/AAACABAAAAD3//7/AAACABAAAAASAP7/AAACABAAAAA=")
 tile_set = SubResource("TileSet_epypp")
