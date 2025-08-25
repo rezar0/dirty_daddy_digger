@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Player
+
 signal healthChanged
 
 const SPEED = 130.0
@@ -9,6 +11,8 @@ const SPRINT_VALUE = 3
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @export var maxHealth = 100
 @onready var currentHealth: int = maxHealth
+
+@export var inventory: Inventory
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -50,9 +54,14 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-func hurtByEnemy(_area):
-	
-	healthChanged.emit()
+
 	
 	
-	
+
+
+func _on_inventory_gui_closed() -> void:
+	get_tree().paused = false
+
+
+func _on_inventory_gui_opened() -> void:
+	get_tree().paused = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://wycrsoiyjbh8"]
+
+[ext_resource type="PackedScene" uid="uid://bbumi30kri1id" path="res://scenes/inv_pickup_base.tscn" id="1_ihhgm"]
+[ext_resource type="Texture2D" uid="uid://dxish85lfoev2" path="res://assets/items/Potion/LifePot.png" id="2_0eqhu"]
+[ext_resource type="Script" uid="uid://v05wkouiiy0m" path="res://scripts/life_bottle.gd" id="2_0ph20"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ph20"]
+resource_local_to_scene = true
+size = Vector2(8, 10)
+
+[node name="LifeBottle" instance=ExtResource("1_ihhgm")]
+script = ExtResource("2_0ph20")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_0ph20")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_0eqhu")

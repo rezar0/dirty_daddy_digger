@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxwr1r2n35r80"]
+
+[ext_resource type="PackedScene" uid="uid://bbumi30kri1id" path="res://scenes/inv_pickup_base.tscn" id="1_40cab"]
+[ext_resource type="Texture2D" uid="uid://iha2rkv5a4kb" path="res://assets/items/Tool/Pickaxe.png" id="2_2ikqw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ikqw"]
+resource_local_to_scene = true
+size = Vector2(12, 16)
+
+[sub_resource type="Animation" id="Animation_2ikqw"]
+resource_name = "spin"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.22, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.0472, 0.872665, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ln4w3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0472]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_07kgg"]
+_data = {
+&"RESET": SubResource("Animation_ln4w3"),
+&"spin": SubResource("Animation_2ikqw")
+}
+
+[node name="Pickaxe" instance=ExtResource("1_40cab")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_2ikqw")
+
+[node name="Sprite2D" parent="." index="1"]
+rotation = -1.0472
+texture = ExtResource("2_2ikqw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_07kgg")
+}

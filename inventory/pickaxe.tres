@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://dn156dlq3m133"]
+
+[ext_resource type="Script" uid="uid://tswav0imikkb" path="res://scripts/Inventory_Item_Resource.gd" id="1_kekct"]
+[ext_resource type="Texture2D" uid="uid://iha2rkv5a4kb" path="res://assets/items/Tool/Pickaxe.png" id="2_n7f5e"]
+
+[resource]
+script = ExtResource("1_kekct")
+name = "Pickaxe"
+texture = ExtResource("2_n7f5e")
+metadata/_custom_type_script = "uid://tswav0imikkb"

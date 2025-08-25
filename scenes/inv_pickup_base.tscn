@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbumi30kri1id"]
+
+[ext_resource type="Script" uid="uid://dj7umh5ytdj7c" path="res://scripts/inv_pickup_base.gd" id="1_cftks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ikqw"]
+resource_local_to_scene = true
+
+[node name="CollectibleBase" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_cftks")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2ikqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
