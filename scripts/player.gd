@@ -1,11 +1,14 @@
 extends CharacterBody2D
 
+signal healthChanged
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 const SPRINT_VALUE = 3
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export var maxHealth = 100
+@onready var currentHealth: int = maxHealth
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -46,3 +49,10 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED) * SPRINT_VALUE
 
 	move_and_slide()
+	
+func hurtByEnemy(_area):
+	
+	healthChanged.emit()
+	
+	
+	
