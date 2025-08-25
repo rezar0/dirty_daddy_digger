@@ -37,12 +37,12 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 		# Handle sprint
-		if Input.is_action_pressed("sprint"):
+		if Input.is_action_pressed("sprint") && direction:
 			velocity.x = direction * SPEED * SPRINT_VALUE
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		# Handle sprint
-		if Input.is_action_pressed("sprint"):
+		if Input.is_action_pressed("sprint") && direction:
 			velocity.x = move_toward(velocity.x, 0, SPEED) * SPRINT_VALUE
 
 	move_and_slide()
