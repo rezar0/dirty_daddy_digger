@@ -9,12 +9,13 @@ const JUMP_VELOCITY = -300.0
 const SPRINT_VALUE = 3
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@export var maxHealth = 100
+@export var maxHealth: int = 100
 @onready var currentHealth: int = maxHealth
 
 @export var inventory: Inventory
 
 func _physics_process(delta: float) -> void:
+	print(currentHealth)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -54,9 +55,14 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
+	
+func heal(amount: int) -> void:
+	currentHealth = clamp(currentHealth + amount, 0, maxHealth)
+	print("Player healed! HP:", currentHealth, "/", maxHealth)
 
-	
-	
+func damage(amount: int) -> void:
+	currentHealth = clamp(currentHealth - amount, 0, maxHealth)
+	print("Player took damage! HP:", currentHealth, "/", maxHealth)
 
 
 func _on_inventory_gui_closed() -> void:
