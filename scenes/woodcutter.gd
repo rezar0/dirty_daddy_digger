@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 const SPEED = 130.0
 const SPRINT_VALUE = 1.5
 
@@ -7,6 +8,12 @@ enum PlayerState { IDLE, WALK, SPRINT, ATTACK }
 var state: PlayerState = PlayerState.IDLE
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+@export var maxHealth: int = 100
+@onready var currentHealth: int = maxHealth
+
+@export var inventory: Inventory
+
 var current_anim: String = ""
 
 func _ready() -> void:
@@ -61,3 +68,19 @@ func _on_animation_finished() -> void:
 	# Only release from attack after the attack anim is finished
 	if state == PlayerState.ATTACK:
 		state = PlayerState.IDLE
+		
+func heal(amount: int) -> void:
+	currentHealth = clamp(currentHealth + amount, 0, maxHealth)
+	print("Player healed! HP:", currentHealth, "/", maxHealth)
+
+func damage(amount: int) -> void:
+	currentHealth = clamp(currentHealth - amount, 0, maxHealth)
+	print("Player took damage! HP:", currentHealth, "/", maxHealth)
+
+
+func _on_inventory_gui_closed() -> void:
+	get_tree().paused = false
+
+
+func _on_inventory_gui_opened() -> void:
+	get_tree().paused = true
