@@ -234,6 +234,5 @@ texture = ExtResource("15_ca42v")
 [node name="Woodcutter" parent="." instance=ExtResource("16_ca42v")]
 position = Vector2(203, -23)
 
-[connection signal="body_entered" from="TileMapLayer/Pickaxe" to="TileMapLayer/Pickaxe" method="_on_body_entered"]
 [connection signal="closed" from="CanvasLayer/InventoryGUI" to="Player" method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGUI" to="Player" method="_on_inventory_gui_opened"]
