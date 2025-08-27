@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://d1m8b1882mdt3"]
+[gd_scene load_steps=21 format=4 uid="uid://d1m8b1882mdt3"]
 
 [ext_resource type="Texture2D" uid="uid://bxdwihxngn7ti" path="res://assets/backgrounds/nature_3/1.png" id="1_iywne"]
 [ext_resource type="PackedScene" uid="uid://dxsl4fe0u2t6l" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://dm0xoxfu6nhx8" path="res://scenes/inventory_gui.tscn" id="10_vtaks"]
 [ext_resource type="Script" uid="uid://0smy1lt7aa01" path="res://scripts/danger_zone.gd" id="14_ir15t"]
 [ext_resource type="Texture2D" uid="uid://c65sq0vuhcoa3" path="res://icon.svg" id="15_ca42v"]
+[ext_resource type="PackedScene" uid="uid://wqxgv4aay6pn" path="res://scenes/woodcutter.tscn" id="16_ca42v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("5_0tnpc")
@@ -230,5 +231,9 @@ shape = SubResource("RectangleShape2D_rysoc")
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("15_ca42v")
 
+[node name="Woodcutter" parent="." instance=ExtResource("16_ca42v")]
+position = Vector2(203, -23)
+
+[connection signal="body_entered" from="TileMapLayer/Pickaxe" to="TileMapLayer/Pickaxe" method="_on_body_entered"]
 [connection signal="closed" from="CanvasLayer/InventoryGUI" to="Player" method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGUI" to="Player" method="_on_inventory_gui_opened"]
